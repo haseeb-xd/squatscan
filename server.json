@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.haseeb-xd/squatscan",
+  "title": "SquatScan",
+  "description": "Detects slopsquatted/typosquatted npm packages before you install them.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/haseeb-xd/squatscan",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/haseeb-xd/squatscan:0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
