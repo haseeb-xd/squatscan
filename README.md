@@ -3,6 +3,14 @@
 SquatScan is an MCP server that checks npm packages for signs of **slopsquatting**
 before you install them.
 
+
+
+
+https://github.com/user-attachments/assets/bac28180-2958-4d56-9410-46e5d1373f4c
+
+
+
+
 AI coding assistants sometimes suggest npm packages that don't exist. Attackers
 register those made-up names and fill them with malware, so the suggested
 `npm install` succeeds and installs the attacker's code. SquatScan catches these
