@@ -81,13 +81,6 @@ On Windows, use an absolute path with forward slashes, e.g.
 `C:/Users/<you>/.squatscan/squatscan.jar`.
 </details>
 
-## Usage
-
-Start a new Claude session, then ask things like:
-
-- `Is lodahs safe to install?`
-- `Check react, reqeusts and some-hallucinated-pkg-xyz`
-- `I'm about to run npm install express lodahs. Is that OK?`
 
 ### Tools
 
@@ -106,6 +99,14 @@ To make it check every time, add this to `~/.claude/CLAUDE.md`:
 Before recommending or installing ANY npm package, check every package name with the
 squatscan MCP tools. RED: don't install it and suggest the intended package.
 YELLOW: warn me and ask before continuing. GREEN: go ahead.
+```
+
+## Usage
+
+Once installed, the agent will automatically check packages with SquatScan before installing them
+
+```bash
+npm init -y && npm install express --dry-run && echo done
 ```
 
 ## Troubleshooting
